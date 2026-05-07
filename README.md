@@ -6,5 +6,5 @@
 # [Emitter code](emitter)
 Contains the full sensor acquisition and transmission logic. Initializes and reads the SHT31 (I2C), DHT11 (bit-bang 1-Wire) and HX711 (bit-bang SPI), displays results on the Grove RGB LCD, and sends all data over LoRa via AT commands through UART4.
 
-# [Receiver code](reciever)
+# [Receiver code](receiver)
 Initializes the LoRa-E5 module in continuous RX mode and polls for incoming packets. Extracts the hex payload from the AT response, decodes it to ASCII, and forwards it to the PC via USART2 (ST-Link VCP).
